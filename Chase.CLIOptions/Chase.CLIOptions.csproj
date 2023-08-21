@@ -4,15 +4,19 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Title>CLIOptions</Title>
+    <Title>Chase CommandLine Parser</Title>
     <Version>0.0.1</Version>
     <Authors>Drew Chase</Authors>
     <Company>LFInteractive</Company>
-    <Description>A simple cli argument builder and parser</Description>
+    <Description>The Chase CLI Parser library is a lightweight command-line argument parsing tool for .NET applications.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/dcmanproductions/Chase.CLIOptions</RepositoryUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageProjectUrl>https://github.com/dcmanproductions/chase-cli-parser</PackageProjectUrl>
+    <RootNamespace>Chase.CLIParser</RootNamespace>
+    <AssemblyName>Chase.CLIParser</AssemblyName>
+    <PackageId>Chase-CLI-Parser</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

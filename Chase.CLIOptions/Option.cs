@@ -1,5 +1,5 @@
 ﻿// LFInteractive LLC. 2021-2024﻿
-namespace Chase.CLIOptions;
+namespace Chase.CLIParser;
 
 public struct Option
 {

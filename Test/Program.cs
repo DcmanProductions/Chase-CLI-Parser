@@ -1,7 +1,5 @@
 ﻿// LFInteractive LLC. 2021-2024﻿
 
-using Chase.CLIOptions;
-
 OptionsManager manager = new("Chase CLI Parser");
 manager.Add(new() { ShortName = "i", LongName = "input", HasArgument = true, Required = true, Description = "The input file." });
 manager.Add(new() { ShortName = "o", LongName = "output", HasArgument = true, Required = true, Description = "The output file." });

@@ -1,7 +1,7 @@
 ﻿// LFInteractive LLC. 2021-2024﻿
 using System.Text;
 
-namespace Chase.CLIOptions;
+namespace Chase.CLIParser;
 
 /// <summary>
 /// Object for managing and creating options
