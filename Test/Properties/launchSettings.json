@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Test": {
+      "commandName": "Project",
+      "commandLineArgs": "-i \"/path/to/input\" -o \"/path/to/output\" -p -h"
+    }
+  }
+}
