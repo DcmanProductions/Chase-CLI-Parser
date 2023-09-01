@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Title>Chase CommandLine Parser</Title>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Authors>Drew Chase</Authors>
     <Company>LFInteractive</Company>
     <Description>The Chase CLI Parser library is a lightweight command-line argument parsing tool for .NET applications.</Description>
@@ -17,6 +17,7 @@
     <RootNamespace>Chase.CLIParser</RootNamespace>
     <AssemblyName>Chase.CLIParser</AssemblyName>
     <PackageId>Chase-CLI-Parser</PackageId>
+    <PackageTags>cli;command line;parser;.net6;.net7;</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
