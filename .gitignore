@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /Test/Program.cs
 /Test/Test.csproj
+/Test/Properties/launchSettings.json
