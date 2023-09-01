@@ -87,7 +87,7 @@ public class OptionsParser
             }
         }
 
-        if (IsPresent("h"))
+        if (IsPresent("h") || args.Contains("-?"))
         {
             manager.PrintHelp();
             Environment.Exit(0);
