@@ -54,25 +54,53 @@ public class OptionsManager
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine($"{Context} - Help:");
+        int shortLength, longLength, descriptionLength;
+        shortLength = longLength = descriptionLength = 0;
+
+        foreach (Option option in options)
+        {
+            if (option.ShortName.Length > shortLength)
+            {
+                shortLength = option.ShortName.Length;
+            }
+            if (option.LongName.Length > longLength)
+            {
+                longLength = option.LongName.Length;
+                //if (option.HasArgument)
+                //{
+                longLength += 8;
+                //}
+            }
+            if (option.Description.Length > descriptionLength)
+            {
+                descriptionLength = option.Description.Length;
+            }
+        }
 
         foreach (Option option in options)
         {
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write($"-{option.ShortName}");
+            Console.Write($"-{option.ShortName}{new string(' ', shortLength - option.ShortName.Length)}");
             Console.ResetColor();
             Console.Write(" | ");
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write($"--{option.LongName}");
+            Console.Write($" --{option.LongName}");
             Console.ResetColor();
             if (option.HasArgument)
             {
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.Write(" [<arg>]");
                 Console.ResetColor();
+                Console.Write(new string(' ', longLength - option.LongName.Length));
+            }
+            else
+            {
+                Console.Write(new string(' ', longLength - option.LongName.Length + 8));
             }
             Console.Write(" | ");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write(option.Description);
+            Console.Write(new string(' ', descriptionLength - option.Description.Length));
             if (option.Required)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
