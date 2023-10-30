@@ -30,10 +30,10 @@ OptionsManager manager = new OptionsManager("cclip.net");
 
 ### Adding Command-Line Options
 
-You can add command-line options to the `OptionsManager` using the `Add` method. Each option is defined by an `OptionDefinition` object, which specifies its short name, long name, whether it has an argument, whether it is required, and a description.
+You can add command-line options to the `OptionsManager` using the `Add` method. Each option is defined by an `Option` object, which specifies its short name, long name, whether it has an argument, whether it is required, and a description.
 
 ```csharp
-manager.Add(new OptionDefinition()
+manager.Add(new Option()
 {
     ShortName = "i",
     LongName = "input",
@@ -42,7 +42,7 @@ manager.Add(new OptionDefinition()
     Description = "The input file."
 });
 
-manager.Add(new OptionDefinition()
+manager.Add(new Option()
 {
     ShortName = "o",
     LongName = "output",
@@ -51,7 +51,7 @@ manager.Add(new OptionDefinition()
     Description = "The output file."
 });
 
-manager.Add(new OptionDefinition()
+manager.Add(new Option()
 {
     ShortName = "c",
     LongName = "continue",
@@ -60,7 +60,7 @@ manager.Add(new OptionDefinition()
     Description = "Continue the application."
 });
 
-manager.Add(new OptionDefinition()
+manager.Add(new Option()
 {
     ShortName = "cc",
     LongName = "connections",
@@ -117,30 +117,36 @@ else
 Here's an example of how you can use cclip.net in your .NET application:
 
 ```csharp
-using System;
+using cclip;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
-        OptionsManager manager = new OptionsManager("cclip.net");
-
-        // Define command-line options here
+        OptionsManager manager = new("application name");
+        manager.Add(new() { ShortName = "v", LongName = "version", HasArgument = false, Required = false, Description = "displays the version" });
+        manager.Add(new() { ShortName = "p", LongName = "print", HasArgument = true, Required = false, Description = "prints the text inputted" });
+        manager.Add(new() { ShortName = "i", LongName = "input", HasArgument = true, Required = true, Description = "input path" });
 
         OptionsParser parser = manager.Parse(args);
 
-        if (parser.IsPresent("i", out string input))
+        if (parser.IsPresent("version"))
         {
-            Console.WriteLine($"Input file is {input}");
+            Console.WriteLine("1.0.0");
         }
-
-        // Check other options here
-
-        // Your application logic goes here
+        else if (parser.IsPresent("print", out string print))
+        {
+            Console.WriteLine(print);
+        }
+        else if (parser.IsPresent("input", out string input))
+        {
+            Console.WriteLine(input);
+        }
     }
 }
 ```
 
-## Conclusion
+# Auto Help generation
+there is no need to to add a help option you can type `-h` `-?` or `--help` to display the help
+![image](https://github.com/Drew-Chase/clip.net/assets/5598099/c04e16cf-2eaf-434e-98a3-c0da4c4d9147)
 
-The cclip.net library simplifies the process of parsing command-line arguments in your .NET application. By defining and parsing options using the `OptionsManager` and `OptionsParser`, you can easily handle command-line arguments and build more user-friendly command-line interfaces for your applications.
