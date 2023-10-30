@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chase.CLIOptions", "Chase.CLIOptions\Chase.CLIOptions.csproj", "{BAB47CD7-52F2-4BC1-9BA8-33112F0D966C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{311C1CA6-C53D-4D2E-A4D2-FB3CAE63A201}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chase.CLIOptions", "Chase.CLIOptions\Chase.CLIOptions.csproj", "{BAB47CD7-52F2-4BC1-9BA8-33112F0D966C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{BAB47CD7-52F2-4BC1-9BA8-33112F0D966C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAB47CD7-52F2-4BC1-9BA8-33112F0D966C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAB47CD7-52F2-4BC1-9BA8-33112F0D966C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{311C1CA6-C53D-4D2E-A4D2-FB3CAE63A201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{311C1CA6-C53D-4D2E-A4D2-FB3CAE63A201}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{311C1CA6-C53D-4D2E-A4D2-FB3CAE63A201}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{311C1CA6-C53D-4D2E-A4D2-FB3CAE63A201}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
