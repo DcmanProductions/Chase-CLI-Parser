@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The clip.net library is a lightweight command-line argument parsing tool for .NET applications. It simplifies the process of parsing command-line arguments and provides an easy-to-use interface for defining and handling command-line options.
+The clip.net (Command Line Interface Parser for .NET) library is a lightweight command-line argument parsing tool for .NET applications. It simplifies the process of parsing command-line arguments and provides an easy-to-use interface for defining and handling command-line options.
 
 This documentation will guide you through using the clip.net library to define and parse command-line arguments in your .NET application.
 
