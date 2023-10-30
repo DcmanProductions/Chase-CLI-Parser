@@ -1,5 +1,5 @@
-﻿// LFInteractive LLC. 2021-2024﻿
-using System.Text;
+﻿// LFInteractive LLC. 2021-2024
+﻿using System.Text;
 
 namespace cclip;
 
@@ -9,6 +9,10 @@ namespace cclip;
 public class OptionsManager
 {
     internal List<Option> options;
+
+    /// <summary>
+    /// The application name or context
+    /// </summary>
     public string Context { get; }
 
     /// <summary>
@@ -66,10 +70,7 @@ public class OptionsManager
             if (option.LongName.Length > longLength)
             {
                 longLength = option.LongName.Length;
-                //if (option.HasArgument)
-                //{
                 longLength += 8;
-                //}
             }
             if (option.Description.Length > descriptionLength)
             {
