@@ -1,6 +1,7 @@
-﻿// LFInteractive LLC. 2021-2024﻿
+﻿// LFInteractive LLC. 2021-2024
+﻿
 
-namespace clip;
+namespace cclip;
 
 /// <summary>
 /// Parses arguments from the command-line

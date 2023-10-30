@@ -1,5 +1,5 @@
 ﻿// LFInteractive LLC. 2021-2024
-﻿namespace clip;
+﻿namespace cclip;
 
 public struct Option
 {

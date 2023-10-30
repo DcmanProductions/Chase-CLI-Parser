@@ -1,7 +1,7 @@
 ﻿// LFInteractive LLC. 2021-2024﻿
 using System.Text;
 
-namespace clip;
+namespace cclip;
 
 /// <summary>
 /// Object for managing and creating options

@@ -1,31 +1,31 @@
-# clip.net Documentation
+# cclip.net Documentation
 
 ## Introduction
 
-The clip.net (Command Line Interface Parser for .NET) library is a lightweight command-line argument parsing tool for .NET applications. It simplifies the process of parsing command-line arguments and provides an easy-to-use interface for defining and handling command-line options.
+The cclip.net (C# Command Line Interface Parser for .NET) library is a lightweight command-line argument parsing tool for .NET applications. It simplifies the process of parsing command-line arguments and provides an easy-to-use interface for defining and handling command-line options.
 
-This documentation will guide you through using the clip.net library to define and parse command-line arguments in your .NET application.
+This documentation will guide you through using the cclip.net library to define and parse command-line arguments in your .NET application.
 
 ## Installation
 
-Before you can start using the clip.net library, you need to include it in your .NET project. You can do this by adding a reference to the Chase CLIParser.dll assembly in your project.
+Before you can start using the cclip.net library, you need to include it in your .NET project. You can do this by adding a reference to the Chase ccliparser.dll assembly in your project.
 
 ### Using NuGet Package Manager
 
-You can also install the clip.net library using NuGet Package Manager:
+You can also install the cclip.net library using NuGet Package Manager:
 
 ```shell
-Install-Package clip.net
+Install-Package cclip.net
 ```
 
 ## Usage
 
 ### Initializing the OptionsManager
 
-To get started with clip.net, you first need to create an `OptionsManager` object to define the command-line options that your application will accept.
+To get started with cclip.net, you first need to create an `OptionsManager` object to define the command-line options that your application will accept.
 
 ```csharp
-OptionsManager manager = new OptionsManager("clip.net");
+OptionsManager manager = new OptionsManager("cclip.net");
 ```
 
 ### Adding Command-Line Options
@@ -114,7 +114,7 @@ else
 
 ## Example
 
-Here's an example of how you can use clip.net in your .NET application:
+Here's an example of how you can use cclip.net in your .NET application:
 
 ```csharp
 using System;
@@ -123,7 +123,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        OptionsManager manager = new OptionsManager("clip.net");
+        OptionsManager manager = new OptionsManager("cclip.net");
 
         // Define command-line options here
 
@@ -143,4 +143,4 @@ class Program
 
 ## Conclusion
 
-The clip.net library simplifies the process of parsing command-line arguments in your .NET application. By defining and parsing options using the `OptionsManager` and `OptionsParser`, you can easily handle command-line arguments and build more user-friendly command-line interfaces for your applications.
+The cclip.net library simplifies the process of parsing command-line arguments in your .NET application. By defining and parsing options using the `OptionsManager` and `OptionsParser`, you can easily handle command-line arguments and build more user-friendly command-line interfaces for your applications.

@@ -4,20 +4,20 @@
     <TargetFrameworks>net7.0;net6.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Title>clip.net</Title>
+    <Title>cclip.net</Title>
     <Version>0.0.1</Version>
     <Authors>Drew Chase</Authors>
     <Company>LFInteractive</Company>
-    <Description>The clip.net library is a lightweight command-line argument parsing tool for .NET applications.</Description>
+    <Description>The cclip.net library is a lightweight command-line argument parsing tool for .NET applications.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/Drew-Chase/clip.net</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Drew-Chase/cclip.net</RepositoryUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <PackageProjectUrl>https://github.com/Drew-Chase/clip.net</PackageProjectUrl>
-    <RootNamespace>clip</RootNamespace>
-    <AssemblyName>clip</AssemblyName>
-    <PackageId>clip.net</PackageId>
-    <PackageTags>cli;command line;parser;.net6;.net7;;clip</PackageTags>
+    <PackageProjectUrl>https://github.com/Drew-Chase/cclip.net</PackageProjectUrl>
+    <RootNamespace>cclip</RootNamespace>
+    <AssemblyName>cclip</AssemblyName>
+    <PackageId>cclip.net</PackageId>
+    <PackageTags>cli;command line;parser;.net6;.net7;;cclip</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

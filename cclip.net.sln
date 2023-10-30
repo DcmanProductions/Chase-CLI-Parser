@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chase.CLIOptions", "Chase.CLIOptions\Chase.CLIOptions.csproj", "{BAB47CD7-52F2-4BC1-9BA8-33112F0D966C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cclip.net", "cclip.net\cclip.net.csproj", "{BAB47CD7-52F2-4BC1-9BA8-33112F0D966C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
