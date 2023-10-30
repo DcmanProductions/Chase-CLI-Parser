@@ -17,7 +17,7 @@
     <RootNamespace>cclip</RootNamespace>
     <AssemblyName>cclip</AssemblyName>
     <PackageId>cclip.net</PackageId>
-    <PackageTags>cli;command line;parser;.net6;.net7;;cclip</PackageTags>
+    <PackageTags>cli;command line;parser;.net6;.net7;clip;cclip</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
