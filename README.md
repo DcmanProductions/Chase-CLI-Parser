@@ -1,31 +1,31 @@
-# Chase CLI Parser Documentation
+# clip.net Documentation
 
 ## Introduction
 
-The Chase CLI Parser library is a lightweight command-line argument parsing tool for .NET applications. It simplifies the process of parsing command-line arguments and provides an easy-to-use interface for defining and handling command-line options.
+The clip.net library is a lightweight command-line argument parsing tool for .NET applications. It simplifies the process of parsing command-line arguments and provides an easy-to-use interface for defining and handling command-line options.
 
-This documentation will guide you through using the Chase CLI Parser library to define and parse command-line arguments in your .NET application.
+This documentation will guide you through using the clip.net library to define and parse command-line arguments in your .NET application.
 
 ## Installation
 
-Before you can start using the Chase CLI Parser library, you need to include it in your .NET project. You can do this by adding a reference to the Chase CLIParser.dll assembly in your project.
+Before you can start using the clip.net library, you need to include it in your .NET project. You can do this by adding a reference to the Chase CLIParser.dll assembly in your project.
 
 ### Using NuGet Package Manager
 
-You can also install the Chase CLI Parser library using NuGet Package Manager:
+You can also install the clip.net library using NuGet Package Manager:
 
 ```shell
-Install-Package Chase-CLI-Parser
+Install-Package clip.net
 ```
 
 ## Usage
 
 ### Initializing the OptionsManager
 
-To get started with Chase CLI Parser, you first need to create an `OptionsManager` object to define the command-line options that your application will accept.
+To get started with clip.net, you first need to create an `OptionsManager` object to define the command-line options that your application will accept.
 
 ```csharp
-OptionsManager manager = new OptionsManager("Chase CLI Parser");
+OptionsManager manager = new OptionsManager("clip.net");
 ```
 
 ### Adding Command-Line Options
@@ -114,7 +114,7 @@ else
 
 ## Example
 
-Here's an example of how you can use Chase CLI Parser in your .NET application:
+Here's an example of how you can use clip.net in your .NET application:
 
 ```csharp
 using System;
@@ -123,7 +123,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        OptionsManager manager = new OptionsManager("Chase CLI Parser");
+        OptionsManager manager = new OptionsManager("clip.net");
 
         // Define command-line options here
 
@@ -143,4 +143,4 @@ class Program
 
 ## Conclusion
 
-The Chase CLI Parser library simplifies the process of parsing command-line arguments in your .NET application. By defining and parsing options using the `OptionsManager` and `OptionsParser`, you can easily handle command-line arguments and build more user-friendly command-line interfaces for your applications.
+The clip.net library simplifies the process of parsing command-line arguments in your .NET application. By defining and parsing options using the `OptionsManager` and `OptionsParser`, you can easily handle command-line arguments and build more user-friendly command-line interfaces for your applications.
