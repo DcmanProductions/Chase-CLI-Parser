@@ -18,9 +18,14 @@
     <AssemblyName>cclip</AssemblyName>
     <PackageId>cclip.net</PackageId>
     <PackageTags>cli;command line;parser;.net6;.net7;clip;cclip</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
